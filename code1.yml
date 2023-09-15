@@ -1,0 +1,15 @@
+---
+- hosts: all
+  gather_facts: false 
+# ignore_errors: true
+  tasks:
+       - name: check the 
+         command: datecoke
+         ignore_errors: yes
+       - name: check the uptime
+         command: |
+                  uptime
+                  date
+                  nproc   
+- hosts: webservers
+  tasks:           
